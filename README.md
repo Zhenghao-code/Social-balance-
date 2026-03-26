@@ -15,7 +15,7 @@
 
 ## ⚙️ 核心机制：动态扭矩判定 (Dynamic Threshold Logic)
 
-单纯统计“发言总数”毫无意义，因为一段对话可能有几百条附和的消息。本工具的核心算法基于**“时间间隙 (Time Gap) 判定”**：
+单纯统计“发言总数”毫无意义，因为一段对话可能有几百条附和的消息。本工具的核心算法基于**“时间间隙 (Time Gap) 判定”：
 
 $$T_{current} - T_{previous} > Threshold$$
 
@@ -27,7 +27,7 @@ $$T_{current} - T_{previous} > Threshold$$
 本工具作为下游数据分析面板，需要依赖上游工具导出微信原始数据。
 
 **Step 1：获取数据源**
-建议使用开源项目 [CipherTalk](https://github.com/hangxian/CipherTalk) （或同类工具）导出微信本地加密数据库，并转换为标准 `JSON` 格式。
+建议使用开源项目 [CipherTalk](https://github.com/ILoveBingLu/CipherTalk) （或同类工具）导出微信本地加密数据库，并转换为标准 `JSON` 格式。
 
 **Step 2：载入仪表盘**
 1. 访问部署好的网页端（或直接在本地双击打开 `index.html`）。
